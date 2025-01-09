@@ -70,5 +70,15 @@
             android:layout_height="wrap_content"
             android:text="Publicar" />
 
+        <!-- TextView para mostrar la hora de la publicación -->
+        <TextView
+            android:id="@+id/tvHoraPubli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hora de publicación"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:layout_marginTop="10dp" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
