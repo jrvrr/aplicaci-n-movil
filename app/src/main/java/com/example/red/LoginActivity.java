@@ -1,4 +1,3 @@
-// Corrección en LoginActivity
 package com.example.red;
 
 import android.content.Intent;
