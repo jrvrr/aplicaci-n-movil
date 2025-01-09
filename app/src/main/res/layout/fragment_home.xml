@@ -25,12 +25,22 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="15dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvFotoLeyenda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Selecciona una foto de perfil"
+                android:textAlignment="center"
+                android:textSize="16sp" />
 
             <ImageButton
                 android:id="@+id/btnFoto"
@@ -41,40 +51,53 @@
             <EditText
                 android:id="@+id/actUser"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:ems="10"
                 android:inputType="text"
-                android:text="Usuario" />
+                android:text="Usuario"
+                android:background="#55B1A0A0"/>
 
             <EditText
                 android:id="@+id/actCorreo"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:ems="10"
                 android:inputType="textEmailAddress"
-                android:text="Correo" />
+                android:text="Correo"
+                android:background="#55B1A0A0"/>
 
             <EditText
                 android:id="@+id/actPassword"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:ems="10"
                 android:inputType="text"
-                android:text="Contraseña" />
+                android:text="Contraseña"
+                android:background="#55B1A0A0"/>
+
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Editar perfil"
+                android:gravity="center"
+                android:backgroundTint="#FF0000"/>
 
             <Button
                 android:id="@+id/btnAct"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="actualizarDatos"
-                android:text="Actualizar datos" />
-        </LinearLayout>
+                android:text="Actualizar datos"
+                android:backgroundTint="#FF0000"/>
 
-        <Button
-            android:id="@+id/btnTema"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:text="Cambiar tema" />
+            <Button
+                android:id="@+id/btnTema"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cambiar tema"
+                android:backgroundTint="#FF0000"/>
+        </LinearLayout>
 
     </LinearLayout>
 
